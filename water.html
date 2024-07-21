@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Theme Park</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+        }
+        .hero {
+            background: url('http://www.insidethemagic.net/wp-content/uploads/2017/05/DSCF4352.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 4em;
+            font-weight: bold;
+        }
+        .attractions img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Water Theme Park</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#attractions">Attractions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to the Water Theme Park</h1>
+        <p>Experience the fun and excitement</p>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <p>Welcome to our Water Theme Park, where excitement meets relaxation! Our park features a wide variety of thrilling rides, relaxing pools, and fun-filled activities for all ages. Join us for an unforgettable adventure!</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://cdn.thecrazytourist.com/wp-content/uploads/2016/09/Hurricane-Bay-Louisville-scaled.jpg" class="img-fluid" alt="Water Theme Park">
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section id="attractions" class="container my-5">
+        <h2 class="text-center mb-4">Attractions</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://media.timeout.com/images/105485707/1024/768/image.jpg" class="card-img-top" alt="Slide 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Water Slide</h5>
+                        <p class="card-text">Feel the rush as you slide down our exhilarating water slides.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://s.hdnux.com/photos/74/14/01/15777885/4/1200x0.jpg" class="card-img-top" alt="Slide 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Wave Pool</h5>
+                        <p class="card-text">Enjoy the waves in our state-of-the-art wave pool.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="http://travelfeatured.com/wp-content/uploads/2013/09/SeaWorld-Orlando-theme-waterpark.jpg" class="card-img-top" alt="Slide 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Lazy River</h5>
+                        <p class="card-text">Relax and float along the lazy river with family and friends.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.aa4LcUWE127caDcyMyHGsQAAAA&pid=Api&P=0&h=180" class="card-img-top" alt="Slide 3">
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">Lazy River</h5> -->
+                        <!-- <p class="card-text">Relax and float along the lazy river with family and friends.</p> -->
+                    </div>
+                </div>
+                
+            </div>
+            <div class="card">
+                <img src="https://s.hdnux.com/photos/01/15/20/32/20252309/3/1200x0.jpg" class="card-img-top" alt="Slide 3">
+                <div class="card-body">
+                    <h5 class="card-title">Kids carnival</h5>
+                    <!-- <p class="card-text">Relax and float along the lazy river with family and friends.</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Water Theme Park. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
